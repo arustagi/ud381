@@ -30,7 +30,8 @@ public class RandomSentenceSpout extends BaseRichSpout {
       "an apple a day keeps the doctor away",
       "four score and seven years ago",
       "snow white and the seven dwarfs",
-      "i am at two with nature"
+      "i am at two with nature",
+      "ankur's test sentence"
       };
     String sentence = sentences[_rand.nextInt(sentences.length)];
     _collector.emit(new Values(sentence));
